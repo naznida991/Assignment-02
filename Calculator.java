@@ -42,13 +42,24 @@ public class Calculator {
     }
 
     public boolean isPrime() {
-      boolean is_prime=true;
+        boolean is_prime = true;
 
-        for (int i = 2; i < a ; i++) {
+        for (int i = 2; i < a; i++) {
             if (a % i == 0) {
-                is_prime=false;
+                is_prime = false;
             }
         }
         return is_prime;
     }
+
+    public static void main(String[] args) {
+        Calculator c = new Calculator(23, 56, 67);
+        System.out.println("Add = " + c.add());
+        System.out.println("Subtract = " + c.subtract());
+        System.out.println("Multiply = " + c.multiply());
+        System.out.println("Divide = " + c.divide());
+        System.out.println("Max of Three = " + c.maxofThree());
+        System.out.println("Is Prime (n) = " + c.isPrime());
+    }
+
 }
