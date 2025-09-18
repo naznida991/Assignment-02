@@ -165,7 +165,8 @@ public class Student_Gradebook_Manager {
     }
 
     public static void main(String[] args) {
-        Student_Gradebook_Manager obj = new Student_Gradebook_Manager();
-        obj.menu();
+        Student_Gradebook_Manager student1 = new Student_Gradebook_Manager();
+        student1.menu();
     }
 }
+
